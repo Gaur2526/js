@@ -4,7 +4,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "mango"
 tinderUser.isLoggedIn = false
 // console.log(tinderUser)
-
+ 
 /*nesting of objects */
 
 const regualarUser = {
