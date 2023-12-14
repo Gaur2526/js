@@ -47,10 +47,26 @@ const users = [
     }
 ]
 
-console.log(users[0].email)
+// console.log(users[0].email)
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
-console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser))
+// console.log(Object.values(tinderUser))
+// console.log(Object.entries(tinderUser))
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"))
+
+/* Object destructuring */
+
+const course = {
+    courseName : "JavaScript",
+    coursePrice : 999,
+    courseInstructor : "Akash Gaur"
+}
+
+// console.log(course.courseInstructor)
+
+/* destructuring means saving of the properties of an object into an distinct variables means we can fetch instructor name by assigning it into another variable */
+
+const {courseInstructor : x} = course /* here : x means we are giving courseinstructor an another name x it is of our choice we can give or not */
+console.log(x)
+
