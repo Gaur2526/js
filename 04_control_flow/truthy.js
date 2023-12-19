@@ -24,5 +24,22 @@ if(emptyArray.length === 0){
 const emptyObject = {}
 
 if(Object.keys(emptyObject).length === 0){
-    console.log("object is empty")
+    // console.log("object is empty")
 }
+
+// NUllish Coalescing operator (??) : null undefined
+
+let val1;
+// val1 = 5 ?? 10;
+// val1 = null ?? 5
+// val1 = undefined ?? 10
+val1 = null ?? 10 ?? 20
+
+// console.log(val1)
+
+
+// ternary operator
+
+const score = 100;
+
+score >= 80 ? console.log("more than 80") : console.log("less than 80");
