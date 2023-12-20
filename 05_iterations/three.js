@@ -28,7 +28,7 @@ map.set("UK","UNITED KINGDOM")
 map.set("IN","INDIA") /* duplicate entries are automatically removed */
 
 for (const [key,value] of map) {
-    console.log(key, ":-", value)
+    console.log(key, ":-", value)   
 }
 
 // for of loop on objects
