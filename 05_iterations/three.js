@@ -30,3 +30,15 @@ map.set("IN","INDIA") /* duplicate entries are automatically removed */
 for (const [key,value] of map) {
     console.log(key, ":-", value)
 }
+
+// for of loop on objects
+/*object are not iterable by for of loop */
+
+const object = {
+    game1 : "NFS",
+    game2: "GTA"
+};
+
+for (const key of object) {
+   // console.log(key)
+}
