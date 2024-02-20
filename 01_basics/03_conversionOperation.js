@@ -2,18 +2,26 @@ let score = "33abc"
 
 // console.log(typeof score);
 
-let typeInNumber = Number(score)
+let typeInNumber = Number(score) 
+/*Number will gurantee that the input score will be a number which will stored in typeInNumber */
 // console.log(typeof typeInNumber);
 // console.log(typeInNumber)
 
 // "33"=> 33
-// "33abc" =>nan
-// "true" =>1 , "false"=>0
+// "33abc" =>NaN
+// true =>1 , false=>0
 
 let isLoggedIn ;
 
 let booleanisLoggedIn = Boolean(isLoggedIn);
 // console.log(booleanisLoggedIn)
+
+/*
+0 -> false
+1 -> true
+"" -> false
+"abc" -> true
+*/
 
 let number  = 33
 
@@ -30,7 +38,7 @@ let negValue = -value;
 // console.log(2+2)
 // console.log(2-2)
 // console.log(2*2)
-// console.log(2**3) /* 2 raise to power 2*/
+//console.log(2**3) /* 2 raise to power 3*/
 // console.log(2/2)
 // console.log(2%3)
 
