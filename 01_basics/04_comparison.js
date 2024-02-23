@@ -18,4 +18,4 @@ comparison treat null to a number 0 that's why 3rd console statement is true 0>=
 //  === known as strict check which also checks value with datatype
 
 console.log("2" === 2) /* return false*/
-console.log("2" == 2) /* returns false*/
+console.log("2" == 2) /* returns true*/
