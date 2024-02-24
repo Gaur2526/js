@@ -13,7 +13,7 @@ const all_new_Heros = [...marvel_Heros,...dc_Heros]
 // console.log(all_new_Heros)
 
 const another_Array = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
-const real_another_Array = another_Array.flat(Infinity)
+const real_another_Array = another_Array.flat(Infinity) /* flat() method is used to convert all the subarrays into a single array it uses an argument called depth which states upto what depth we have to flat the array so we simply provide infinity to flat all the subarrays*/
 // console.log(real_another_Array)
 
 console.log(Array.isArray("Akash")) /*return boolean value whether the entered value is array or not */
