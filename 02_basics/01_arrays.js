@@ -2,7 +2,9 @@
 
 const myArray = [1,2,3,4,5];
 const myHeros = ["iron-man","thor","superman"]
-
+/* another method of array declaration */
+const array = new Array(1,2,3,4);
+console.log(array) 
 // console.log(myArray[0]);
 // console.log(myHeros.length);
 
