@@ -1,6 +1,6 @@
 // dates
 
-/* months in js starts from 0 means jan*/
+/* months in js starts from 0 means 0 == jan*/
 /* time is in milliseconds*/
 
 const myDate = new Date();
@@ -20,7 +20,7 @@ const newDate = new Date("04-27-2021");
 
 let myTimeStamp =Date.now()
 
-// console.log(myTimeStamp)
+// console.log(myTimeStamp) /* return value in milliseconds*/
 // console.log(newDate.getTime())
 
 /* conversion to seconds*/
