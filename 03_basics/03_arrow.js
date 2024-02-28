@@ -27,5 +27,5 @@ chaii()
 //       return num1+num2
 // }
 
-const addTwoNum = (num1,num2) => (num1+num2) /* implicit method : doesn't require return keyword*/
+const addTwoNum = (num1,num2) => (num1+num2) /* implicit return method : doesn't require return keyword*/
 console.log(addTwoNum(3,4))
