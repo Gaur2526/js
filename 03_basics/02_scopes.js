@@ -24,7 +24,7 @@ function one(){
         // console.log(username);
     }
 
-    // console.log(email); /* here two is considered as local scope and one is considered as global scope for the two so we cannot fetch value from the local scope to the global scope*/
+    // console.log(email); /* here two() is considered as local scope and one() is considered as global scope for the two so we cannot fetch value from the local scope to the global scope*/
 
     two()
 }
@@ -43,7 +43,7 @@ if(true){
 }
 // console.log(username) /* cannot be accesed bcz of scope*/
 
-/* *************** Hositing ****************************** */
+/* *************** Hoisting ****************************** */
 /* JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.
 */
 
