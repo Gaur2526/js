@@ -1,6 +1,6 @@
 /* FOR EACH LOOP : used mostly */
 
-// forEach()  requires an call back function as an parameter call back function means functions having no name 
+// forEach()  requires an call back function as an parameter, call back function means functions having no name 
 
  const myArray = ["akash","nikanshu","tushar"]
 
