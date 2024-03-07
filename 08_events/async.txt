@@ -1,0 +1,14 @@
+javascipt -: 
+       1.synchronus : one by one execution
+       2.single threaded : means operations are executed by one thread only
+
+
+Execution context : execute one line of code at a time 
+    for ex : console.log("hello")
+             console.log("hii")
+             during runtime in the start first console statement will be executed and then other statements in the order
+
+             each operation wait for the complete execution of the previous operation
+
+Blocking code : block the flow of program
+Non Blocking code : doesn't block the flow of program
