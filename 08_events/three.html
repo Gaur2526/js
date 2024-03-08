@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Akash!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+
+    // setInterval(function(){
+    //     console.log('Akash',Date.now())
+    // },1000)
+
+    // const sayDate = function(){
+    //     console.log('Akash',Date.now())
+    // }
+
+    // setInterval(sayDate,1000)
+    /* setInterval also have a 3rd parameter a string which can be passed as an parameter to the function*/
+
+    const sayDate = function(str){
+          console.log(str,Date.now())
+    }
+
+    // setInterval(sayDate,1000,'Date : ')
+
+    let set
+    document.querySelector('#start').addEventListener('click',function(){
+        console.log('Started')
+        set = setInterval(sayDate,1000,'Date : ')
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(e){
+       clearInterval(set)
+       console.log('Stopped')       
+       
+    })
+
+
+</script>
+</html>
