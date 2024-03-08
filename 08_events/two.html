@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello akash!</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    // setTimeout(function(){
+    //     console.log("akash")
+    // },2000)
+
+    const sayAkash = function(){
+        //console.log('Hello Akash')
+    }
+
+   // setTimeout(sayAkash,2000); 
+    /*we have to provide the reference of the function 
+             reference : sayAkash
+             execution : sayAkash() 
+             2nd parameter is time in milliseconds*/
+
+    
+    const changeContent  = function(){
+        document.querySelector('h1').innerHTML = 'Best javascript series'
+    }
+
+    const changeMe = setTimeout(changeContent,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+              clearTimeout(changeMe); /* clearTimeout is used to stop the flow of setTimeout if we want before the entered time in the setTimeout*/
+              console.log('Stopped')
+    })
+
+</script>
+</html>
