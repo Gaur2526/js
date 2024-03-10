@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatibe" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;" >
+    
+<p>0	UNSENT	Client has been created. open() not called yet.</p>
+<p>1	OPENED	open() has been called.</p>
+<p>2	HEADERS_RECEIVED	send() has been called, and headers and status are available.</p>
+<p>3	LOADING	Downloading; responseText holds partial data.</p>
+<p>4	DONE	The operation is complete.</p>
+
+</body>
+
+<script>
+    
+     /* XMLHttpRequest is an type of class so we have to make an object for this using new keyword 
+       XMLHttpRequest is used to send or recieve request */
+
+        const xhr = new XMLHttpRequest();
+
+        /* open is used to send req and it is available after you have created XMLHttpRequest()*/
+
+        //xhr.open('GET','https://api.github.com/users/gaur2526') 
+
+        const reqURL = 'https://api.github.com/users/hiteshchoudhary'
+        xhr.open('GET',reqURL)
+
+        /* it contains two parameters first is method and second is string , method means what type of req you have to send ex - GET , POST ,etc and string means we are providing directly an API or stored it in an variable and then pass it in open()*/ 
+
+        xhr.onreadystatechange = function() {
+            console.log(xhr.readyState)
+
+            if(xhr.readyState === 4){
+                let  data = this.responseText;
+                console.log(data) /* this will provide you the value of the current context */
+                //console.log(typeof data) /* api response is in the form of string mostly we have to convert it in JSON we can't access the properties of data without converting it into JSON object */
+
+                data = JSON.parse(this.responseText)
+                console.log(typeof data) /* now we can access the properties of the data */
+
+                console.log(data.followers)
+                console.log(data.avatar_url);
+                console.log(data.name)
+
+            }
+        }
+       
+        xhr.send() /* it is used to call open() */
+
+</script>
+</html>
