@@ -25,4 +25,3 @@ console.log(chai.changeusername());
 
 /*Behind the scene*/
 
-function User()
