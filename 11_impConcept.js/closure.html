@@ -1,0 +1,35 @@
+/* lexical scoping */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure aur chai</title>
+</head>
+<body style= 'background-color: #313131;'>
+    
+</body>
+<script>
+
+    function outer(){
+
+        let username = 'akash';
+        //console.log(secret); /* cannot be accessed because of lexical scoping */
+        function inner(){
+            let secret = 'akash123';
+            console.log('inner',username);
+        }
+
+        function innerTwo(){
+            console.log('innerTwo',username);
+            //console.log(secret); /* cannot be accessed because of lexical scoping */
+        }
+        inner();
+        innerTwo();
+    }
+
+    outer();
+   // console.log('outer',username); /* cannot be executed because of lexical scoping */
+</script>
+</html>
