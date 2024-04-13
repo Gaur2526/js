@@ -20,6 +20,7 @@ class User{
     }
 
     /* NOTE : _ means that now the property is an private field which cannot be accessed outside a new proposol is introduced in es2022 where we are using # to define a private property in future */
+    
     /*if we console using this.password = value, so it will provide an maximum call stack size exceed because both the constructor and setter will set the same property password so both constructor and setter get's confused and their is an race between constructor and setter */
 
     /* the solution to the maximum call stack size exceed is that if we declare a completely new variable/property then it will not show the error so we will include an _ */
